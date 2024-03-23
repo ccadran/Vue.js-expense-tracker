@@ -4,7 +4,7 @@
     <li
       v-for="transaction in transactions"
       :key="transaction.id"
-      :class="transaction.amount < 0 ? 'plus' : 'minus'"
+      :class="transaction.amount > 0 ? 'plus' : 'minus'"
     >
       {{ transaction.text }} <span>${{ transaction.amount }}</span
       ><button class="delete-btn">x</button>
